@@ -6,7 +6,7 @@ describe("Testing <CourseListRow />", () => {
   it("When isHeader is true test the component renders one cell with colspan = 2 when textSecondCell does not exist", () => {
     let wrapper = shallow(<CourseListRow isHeader={true} textFirstCell="first cell test"/>);
     expect(wrapper.find('th')).toHaveLength(1);
-    expect(wrapper.find('th').prop('colSpan')).toEqual('2');
+    expect(wrapper.find('th').prop('colSpan')).toEqual(2);
     expect(wrapper.find('th').text()).toEqual('first cell test');
   });
 
